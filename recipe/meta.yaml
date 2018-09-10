@@ -1,6 +1,6 @@
 {% set name = "go-archiver" %}
-{% set version = "2.0" %}
-{% set sha256 = "bf11f62964299cef1f5acf982e12b628dd1d7ec9842689ff8f8f59cc37b3b669" %}
+{% set version = "2.1" %}
+{% set sha256 = "78dd79e2b5bd76f5b70120f603a2660e63bbcc2ab30c4e66640a2e4961f94c54" %}
 
 package:
   name: {{ name|lower }}
