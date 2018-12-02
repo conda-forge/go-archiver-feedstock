@@ -1,6 +1,6 @@
 {% set name = "go-archiver" %}
-{% set version = "2.1" %}
-{% set sha256 = "78dd79e2b5bd76f5b70120f603a2660e63bbcc2ab30c4e66640a2e4961f94c54" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "a58ec07f7d383cd0a1b0734a9c16da4c0716e386a6df6860d041405dd4f73c6a" %}
 
 package:
   name: {{ name|lower }}
@@ -9,6 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/mholt/archiver/archive/v{{ version }}.tar.gz
+  folder: src/github.com/mholt/archiver
   sha256: {{ sha256 }}
 
 build:
@@ -23,16 +24,16 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/bin/archiver  # [unix]
-    - archiver -h || true  # [unix]
-    - if not exist "%LIBRARY_BIN%\\archiver.exe" exit 1  # [win]
-    - archiver -h || exit 0  # [win]
+    - test -f $PREFIX/bin/arc  # [unix]
+    - arc -h || true  # [unix]
+    - if not exist "%LIBRARY_BIN%\\arc.exe" exit 1  # [win]
+    - arc -h || exit 0  # [win]
 
 about:
   home: https://github.com/mholt/archiver
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["SRC_DIR"] }}/LICENSE'
+  license_file: src/github.com/mholt/archiver/LICENSE
   summary: 'Make and extract common archive formats such as .zip, and .tar.gz'
   description: |
       Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz,
