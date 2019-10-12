@@ -7,4 +7,4 @@ go build
 if errorlevel 1 exit 1
 
 mkdir "%LIBRARY_BIN%"
-mv "%GOPATH%\bin\arc" "%LIBRARY_BIN%\arc"
+mv "arc" "%LIBRARY_BIN%\arc"

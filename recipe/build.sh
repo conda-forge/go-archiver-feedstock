@@ -7,4 +7,4 @@ go get -v .
 go build
 
 mkdir -p $PREFIX/bin
-mv $GOPATH/bin/arc $PREFIX/bin
+mv arc $PREFIX/bin
