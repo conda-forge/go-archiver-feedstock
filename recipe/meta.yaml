@@ -1,6 +1,6 @@
 {% set name = "go-archiver" %}
-{% set version = "3.3.0" %}
-{% set sha256 = "c8e88340e80b428c1a1c9734084395b473c9458fcea8b8b5126a9db96ae45844" %}
+{% set version = "3.3.1" %}
+{% set sha256 = "e8ea181bc4d5aa512b8f34e4051e13e0e98159b5c1febcdb82417e9598063b0d" %}
 
 package:
   name: {{ name|lower }}
@@ -14,8 +14,8 @@ source:
 
 build:
   number: 0
-  binary_relocation: False
-  detect_binary_files_with_prefix: False
+  binary_relocation: false
+  detect_binary_files_with_prefix: false
 
 requirements:
   build:
@@ -34,14 +34,14 @@ about:
   license: MIT
   license_family: MIT
   license_file: src/github.com/mholt/archiver/LICENSE
-  summary: 'Make and extract common archive formats such as .zip, and .tar.gz'
+  summary: Make and extract common archive formats such as .zip, and .tar.gz
   description: |
-      Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz,
-      .tar.lz4, .tar.sz, and .rar (extract-only) files with Go. Package
-      archiver makes it trivially easy to make and extract common archive
-      formats. Simply name the input and output file(s). Files are put into the
-      root of the archive; directories are recursively added, preserving
-      structure.
+    Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz,
+    .tar.lz4, .tar.sz, and .rar (extract-only) files with Go. Package
+    archiver makes it trivially easy to make and extract common archive
+    formats. Simply name the input and output file(s). Files are put into the
+    root of the archive; directories are recursively added, preserving
+    structure.
   doc_url: https://godoc.org/github.com/mholt/archiver
   dev_url: https://github.com/mholt/archiver
 
