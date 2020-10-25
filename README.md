@@ -5,9 +5,13 @@ Home: https://github.com/mholt/archiver
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/go-archiver-feedstock/blob/master/LICENSE.txt)
 
 Summary: Make and extract common archive formats such as .zip, and .tar.gz
+
+Development: https://github.com/mholt/archiver
+
+Documentation: https://godoc.org/github.com/mholt/archiver
 
 Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz,
 .tar.lz4, .tar.sz, and .rar (extract-only) files with Go. Package
