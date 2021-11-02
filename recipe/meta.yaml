@@ -19,7 +19,7 @@ build:
 
 requirements:
   build:
-    - go
+    - {{ compiler('nocgo') }}
     - git
 
 test:
